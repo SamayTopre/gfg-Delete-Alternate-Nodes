@@ -1,0 +1,21 @@
+void deleteAlt(struct Node *head){
+    
+    Node*temp=head;
+    Node*dupl;
+
+    while(temp!=NULL)
+    {
+        if(temp->next==NULL)
+        {
+            return;
+        }
+        Node*dupl=temp->next->next;
+        
+        temp->next=temp->next->next;
+        temp=dupl;
+
+    
+
+    }
+    
+}
